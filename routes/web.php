@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::post('/books', 'BooksController@store', ['_token' => csrf_token()]);
+Route::patch('/books/{book}', 'BooksController@update', ['_token' => csrf_token()]);
