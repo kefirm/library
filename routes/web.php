@@ -13,3 +13,6 @@
 
 Route::post('/books', 'BooksController@store', ['_token' => csrf_token()]);
 Route::patch('/books/{book}', 'BooksController@update', ['_token' => csrf_token()]);
+Route::delete('/books/{book}', 'BooksController@destroy', ['_token' => csrf_token()]);
+
+Route::post('author', 'AuthorsController@store');
