@@ -21,7 +21,9 @@ class VerifyCsrfToken extends Middleware
     protected $except = [
         '/books',
         'books/*',
-        'author'
+        'author',
+        '/checkout/*',
+        '/checkin/*'
         //
     ];
 }

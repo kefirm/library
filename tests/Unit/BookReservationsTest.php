@@ -60,8 +60,7 @@ class BookReservationsTest extends TestCase
 
         $book->checkin($user);
     }
-
-
+    /** @test */
 
 
 
