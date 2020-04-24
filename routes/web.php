@@ -15,6 +15,7 @@ Route::post('/books', 'BooksController@store', ['_token' => csrf_token()]);
 Route::patch('/books/{book}', 'BooksController@update', ['_token' => csrf_token()]);
 Route::delete('/books/{book}', 'BooksController@destroy', ['_token' => csrf_token()]);
 
+Route::get('authors/create', 'AuthorsController@create');
 Route::post('authors', 'AuthorsController@store');
 
 Route::post('/checkout/{book}', 'CheckoutBookController@store');
